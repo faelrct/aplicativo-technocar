@@ -18,7 +18,7 @@ jobs:
         options: -v ${{ github.workspace }}:/home/user/hostroot
         run: |
           cd /home/user/hostroot
-          buildozer -v android debug
+          yes | buildozer -v android debug --warn_on_root 0
 
     - name: Upload APK Artifact
       uses: actions/upload-artifact@v4
