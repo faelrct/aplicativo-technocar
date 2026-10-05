@@ -5,19 +5,16 @@ package.domain = org.faeldograu
 source.dir = .
 source.include_exts = py,png,jpg,kv,atlas,ttf,json
 version = 0.1
-requirements = python3,kivy==2.3.0,pillow
+requirements = python3,kivy,pillow
 orientation = portrait
 fullscreen = 0
 
-# Android specific
+# Android config
 android.api = 33
 android.minapi = 24
 android.ndk = 25b
-android.ndk_api = 24
 android.archs = arm64-v8a
-android.allow_backup = True
 android.accept_sdk_license = True
-p4a.branch = master
 
 [buildozer]
 log_level = 2
